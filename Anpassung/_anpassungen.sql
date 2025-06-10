@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS = 0;
 CREATE TABLE `_anpassungen` (
   `id` int(10) NOT NULL,
   `spieler_id` int(10) NOT NULL,
@@ -10,3 +11,4 @@ CREATE TABLE `_anpassungen` (
   PRIMARY KEY (`id`),
   KEY `toffer_spieler_id_fk` (`spieler_id`)
 ) DEFAULT CHARSET=utf8, ENGINE=InnoDB;
+SET FOREIGN_KEY_CHECKS = 1;
